@@ -6,14 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Producto extends Model
 {
-    protected $primaryKey = 'id_producto';
-    protected $table = 'productos';
+  protected $primaryKey = 'id';
+  protected $table = 'productos';
 
-    public function sucursales(){
-
-    }
-
-    public function stocks(){
-        
-    }
+  public function stocks()
+  {
+    return $this->hasMany(Stock::class);
+  }
 }

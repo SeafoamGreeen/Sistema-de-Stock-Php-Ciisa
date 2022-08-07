@@ -11,7 +11,8 @@ class MenuController extends Controller
     return view('menu');
   }
 
-  public function create(){
+  public function create()
+  {
     return view('registrar');
-}
+  }
 }

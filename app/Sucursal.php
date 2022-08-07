@@ -6,14 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sucursal extends Model
 {
-    protected $primaryKey = 'id_sucursal';
-    protected $table = 'sucursales';
+  protected $primaryKey = 'id';
+  protected $table = 'sucursales';
 
-    // public function productos(){
-
-    // }
-
-    // public function stocks(){
-        
-    // }
+  public function stocks()
+  {
+    return $this->hasMany(Stock::class);
+  }
 }

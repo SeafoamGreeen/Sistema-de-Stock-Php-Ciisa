@@ -6,14 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Stock extends Model
 {
-    protected $primaryKey = 'id_stock';
-    protected $table = 'stocks';
+  protected $primaryKey = 'id';
+  protected $table = 'stocks';
 
-    // public function productos(){
+  public function producto()
+  {
+    return $this->belongsTo(Producto::class, 'productos_id');
+  }
 
-    // }
-
-    // public function sucursales(){
-        
-    // }
+  public function sucursal()
+  {
+    return $this->belongsTo(Sucursal::class, 'sucursales_id');
+  }
 }

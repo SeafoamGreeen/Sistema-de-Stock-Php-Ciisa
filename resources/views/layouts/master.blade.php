@@ -13,7 +13,7 @@
   <!-- HEADER -->
   @section('header')
   <header
-    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom border-secondary "
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom border-secondary bg-gradient"
     style="background-color:#1b4b35;">
 
     <!-- ICONO -->
@@ -31,10 +31,8 @@
       <!-- BOTONES NAVBAR -->
     </div>
     <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 text-success">
-      <li class="btn btn-sm mx-1 btn-outline-success"><a href="/" class="nav-link px-2 link-light">Inicio</a></li>
-      <li class="btn btn-sm mx-1 btn-outline-success"><a href="/registrar" class="nav-link px-2 link-light">Registrar Producto</a></li>
-      <li class="btn btn-sm mx-1 btn-outline-success"><a href="/sesion" class="nav-link px-2 link-light">Admin Login</a></li>
-      <li class="btn btn-sm mx-1 btn-outline-success"><a href="/actualizar" class="nav-link px-2 link-light">Actualizar</a></li>
+      <li class="btn btn-sm mx-1 btn-outline-success"><a href="/menu" class="nav-link px-2 link-light">Inicio</a></li>
+      <li class="btn btn-sm mx-1 btn-outline-secondary"><a href="/sesion" class="nav-link px-2 link-light">Cerrar sesión</a></li>
     </ul>
     <!-- BOTONES NAVBAR END -->
 

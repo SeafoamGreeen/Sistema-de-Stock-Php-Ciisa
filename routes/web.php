@@ -14,12 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'MenuController@index') ;
+Route::resource('/productos', 'ProductosController');
+
+Route::get('/consultar', 'ConsultarController@index');
+Route::post('/consultar', 'ConsultarController@consulta');
 
 Route::get('/sesion', 'SesionController@index');
 Route::get('/menu', 'MenuController@index');
-Route::get('/registrar', 'RegistrarController@index');
 Route::get('/asignar', 'AsignarController@index');
-Route::get('/consultar', 'ConsultarController@index');
 Route::get('/eliminar', 'EliminarController@index');
-Route::get('/actualizar', 'ActualizarController@index');
-Route::resource('/registrar', 'ProductosController::class');
+/* Route::get('/productos','ProductosController@index'); //Mostrar todos los productos */
+Route::get('/actualizar/{id}', 'ActualizarController@update');
